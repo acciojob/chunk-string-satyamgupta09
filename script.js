@@ -26,7 +26,7 @@ function stringChop(str, size) {
 	 if (!str) return [];
 	let res=[];
 
-	for(let i=0;i<str.lenght;i+=size){
+	for(let i=0;i<str.length;i+=size){
 		res.push(str.substring(i,i+size));
 	}
 
@@ -34,6 +34,6 @@ function stringChop(str, size) {
 }
 
 // Do not change the code below
-// const str = prompt("Enter String.");
-// const size = parseInt(prompt("Enter Chunk Size."), 10); // Convert size to integer
+const str = prompt("Enter String."); 
+const size = parseInt(prompt("Enter Chunk Size."), 10); // Convert size to integer
 alert(stringChop(str, size));
